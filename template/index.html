@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!-- НАЗВАНИЕ ПРОЕКТА --></title>
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+    <!-- ========================================
+         НАВИГАЦИЯ
+         ======================================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><!-- КОРОТКОЕ НАЗВАНИЕ --></div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#story">История</a></li>
+                <li><a href="#characters">Герои</a></li>
+                <li><a href="#visual">Визуальный язык</a></li>
+                <li><a href="#rhythm">Ритм и эмоция</a></li>
+                <li><a href="#vision">Режиссёр</a></li>
+                <li><a href="#production">Производство</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO: ПЕРВЫЙ ЭКРАН
+         ======================================== -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title"><!-- НАЗВАНИЕ --></h1>
+            <p class="hero-tagline"><!-- СЛОГАН / КРЮЧОК --></p>
+            <p class="hero-format"><!-- Жанр / X серий × Y минут --></p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ИСТОРИЯ
+         ======================================== -->
+    <section id="story" class="section story">
+        <div class="container">
+            <h2 class="section-title">История</h2>
+
+            <div class="story-content">
+                <!-- Логлайн -->
+                <div class="story-block logline">
+                    <h3>Логлайн</h3>
+                    <p class="logline-text">
+                        <!-- 1-2 предложения: Герой + проблема + действие + конфликт -->
+                    </p>
+                </div>
+
+                <!-- Синопсис -->
+                <div class="story-block synopsis">
+                    <h3>Синопсис</h3>
+                    <p><!-- Абзац 1: Кто герой, какой он --></p>
+                    <p><!-- Абзац 2: Что запускает историю --></p>
+                    <p><!-- Абзац 3: Куда попадает / что происходит --></p>
+                    <p><strong><!-- Абзац 4: Эмоциональный посыл (выделено) --></strong></p>
+                </div>
+
+                <!-- Материалы -->
+                <div class="screenplay-blocks">
+                    <div class="screenplay-intro screenplay-bg">
+                        <p>Сценарий первой серии</p>
+                        <button class="storyboard-btn" onclick="window.open('materials/screenplay.pdf', '_blank')">Читать сценарий</button>
+                    </div>
+                    <div class="screenplay-intro synopsis-bg">
+                        <p>Синопсис всех серий</p>
+                        <button class="storyboard-btn" onclick="window.open('materials/synopsis.pdf', '_blank')">Читать синопсис</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ГЕРОИ
+         ======================================== -->
+    <section id="characters" class="section characters">
+        <div class="container">
+            <h2 class="section-title">Герои</h2>
+
+            <div class="characters-grid">
+                <!-- Персонаж 1 -->
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/character-1.jpg" alt="Имя">
+                    </div>
+                    <div class="character-info">
+                        <h3><!-- ИМЯ, ВОЗРАСТ --></h3>
+                        <p class="actor-name">в исполнении <!-- Актёр --></p>
+                        <p class="character-type"><!-- Профессия / типаж --></p>
+                        <p class="character-description"><!-- Описание персонажа --></p>
+                        <p class="character-arc"><strong>Арка:</strong> <!-- Путь героя --></p>
+                    </div>
+                </div>
+
+                <!-- Персонаж 2 -->
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/character-2.jpg" alt="Имя">
+                    </div>
+                    <div class="character-info">
+                        <h3><!-- ИМЯ, ВОЗРАСТ --></h3>
+                        <p class="actor-name">в исполнении <!-- Актёр --></p>
+                        <p class="character-type"><!-- Профессия / типаж --></p>
+                        <p class="character-description"><!-- Описание персонажа --></p>
+                        <p class="character-arc"><strong>Арка:</strong> <!-- Путь героя --></p>
+                    </div>
+                </div>
+
+                <!-- Персонаж 3 -->
+                <div class="character-card">
+                    <div class="character-image">
+                        <img src="images/character-3.jpg" alt="Имя">
+                    </div>
+                    <div class="character-info">
+                        <h3><!-- ИМЯ, ВОЗРАСТ --></h3>
+                        <p class="actor-name">в исполнении <!-- Актёр --></p>
+                        <p class="character-type"><!-- Профессия / типаж --></p>
+                        <p class="character-description"><!-- Описание персонажа --></p>
+                        <p class="character-arc"><strong>Арка:</strong> <!-- Путь героя --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ВИЗУАЛЬНЫЙ ЯЗЫК
+         ======================================== -->
+    <section id="visual" class="section visual">
+        <div class="container">
+            <h2 class="section-title">Визуальный язык</h2>
+            <p class="section-subtitle"><!-- Референсы: Film1 + Film2 + Film3 --></p>
+
+            <!-- Референсы -->
+            <div class="visual-subsection">
+                <h3 class="subsection-title title-decorated">Референсы</h3>
+                <div class="posters-grid posters-4">
+                    <div class="poster-card">
+                        <div class="poster-image">
+                            <img src="images/reference-1.jpg" alt="Референс 1">
+                        </div>
+                        <p class="poster-caption"><!-- Название — что берём --></p>
+                    </div>
+                    <div class="poster-card">
+                        <div class="poster-image">
+                            <img src="images/reference-2.jpg" alt="Референс 2">
+                        </div>
+                        <p class="poster-caption"><!-- Название — что берём --></p>
+                    </div>
+                    <!-- Добавить ещё по необходимости -->
+                </div>
+            </div>
+
+            <!-- Цветовая палитра -->
+            <div class="visual-subsection">
+                <h3 class="subsection-title title-decorated">Цветовая палитра</h3>
+                <div class="color-scheme">
+                    <div class="color-block cold">
+                        <h4><!-- Период / Состояние --></h4>
+                        <p><!-- Цвета --></p>
+                        <p class="color-meaning"><!-- Значение --></p>
+                    </div>
+                    <div class="color-block warm">
+                        <h4><!-- Период / Состояние --></h4>
+                        <p><!-- Цвета --></p>
+                        <p class="color-meaning"><!-- Значение --></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ключевые визуальные акценты -->
+            <div class="visual-subsection">
+                <h3 class="subsection-title title-decorated">Ключевые визуальные акценты</h3>
+                <div class="visual-accents">
+                    <div class="accent-item">
+                        <strong><!-- Название акцента --></strong>
+                        <p><!-- Описание --></p>
+                    </div>
+                    <!-- Добавить ещё по необходимости -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         РИТМ И ЭМОЦИЯ
+         ======================================== -->
+    <section id="rhythm" class="section rhythm">
+        <div class="container">
+            <h2 class="section-title">Ритм и эмоция</h2>
+            <p class="section-subtitle"><!-- Музыкальная концепция --></p>
+
+            <div class="rhythm-content">
+                <div class="rhythm-concept">
+                    <p><!-- Как музыка связана с историей --></p>
+                </div>
+
+                <div class="emotion-grid">
+                    <div class="emotion-card">
+                        <div class="emotion-icon"><!-- Эмодзи --></div>
+                        <h4><!-- Жанр 1 --></h4>
+                        <p><!-- Описание --></p>
+                        <p class="emotion-function"><!-- Функция в истории --></p>
+                    </div>
+                    <div class="emotion-card">
+                        <div class="emotion-icon"><!-- Эмодзи --></div>
+                        <h4><!-- Жанр 2 --></h4>
+                        <p><!-- Описание --></p>
+                        <p class="emotion-function"><!-- Функция в истории --></p>
+                    </div>
+                    <div class="emotion-card">
+                        <div class="emotion-icon"><!-- Эмодзи --></div>
+                        <h4><!-- Жанр 3 --></h4>
+                        <p><!-- Описание --></p>
+                        <p class="emotion-function"><!-- Функция в истории --></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         РЕЖИССЁРСКОЕ ВИДЕНИЕ
+         ======================================== -->
+    <section id="vision" class="section vision">
+        <div class="container">
+            <h2 class="section-title">Режиссёрское видение</h2>
+
+            <div class="vision-content">
+                <!-- Стейтмент -->
+                <div class="vision-statement">
+                    <blockquote>
+                        <!-- Личное высказывание режиссёра -->
+                    </blockquote>
+                </div>
+
+                <!-- Подход к актёрам -->
+                <div class="vision-subsection">
+                    <h3 class="subsection-title title-decorated">Подход к актёрам</h3>
+                    <div class="vision-principle">
+                        <p><strong>Принцип:</strong> <!-- Общий принцип --></p>
+                        <p><strong>Методы:</strong> <!-- Методы работы --></p>
+                    </div>
+                </div>
+
+                <!-- Подход к камере -->
+                <div class="vision-subsection">
+                    <h3 class="subsection-title title-decorated">Подход к камере</h3>
+                    <div class="camera-grid">
+                        <div class="camera-card">
+                            <h4>Масштаб</h4>
+                            <p><!-- Описание планов --></p>
+                        </div>
+                        <div class="camera-card">
+                            <h4>Движение</h4>
+                            <p><!-- Описание движения --></p>
+                        </div>
+                        <div class="camera-card">
+                            <h4>Точка зрения</h4>
+                            <p><!-- POV и т.д. --></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Локации (опционально) -->
+                <div class="vision-subsection">
+                    <h3 class="subsection-title title-decorated">Локации</h3>
+                    <div class="locations-grid">
+                        <div class="location-card" onclick="openLocationSlider('location1')">
+                            <div class="location-image">
+                                <img src="images/location-1.jpg" alt="Локация">
+                            </div>
+                            <div class="location-info">
+                                <h4><!-- Название --></h4>
+                                <p><!-- Описание --></p>
+                                <span class="slides-count">X фото</span>
+                            </div>
+                        </div>
+                        <!-- Добавить ещё по необходимости -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ПРОИЗВОДСТВО
+         ======================================== -->
+    <section id="production" class="section production">
+        <div class="container">
+            <h2 class="section-title">Производство</h2>
+            <p class="section-subtitle"><!-- Формат: качество + скорость + бюджет --></p>
+
+            <div class="production-grid">
+                <div class="production-card">
+                    <div class="production-icon"><!-- Эмодзи --></div>
+                    <h3>Хронометраж</h3>
+                    <div class="production-value"><!-- X серий × Y мин --></div>
+                    <p><!-- Примечание --></p>
+                </div>
+
+                <div class="production-card">
+                    <div class="production-icon"><!-- Эмодзи --></div>
+                    <h3>Структура</h3>
+                    <div class="production-value"><!-- X актов --></div>
+                    <ul class="production-timeline">
+                        <li><strong>Акт 1:</strong> <!-- Описание --></li>
+                        <li><strong>Акт 2:</strong> <!-- Описание --></li>
+                        <li><strong>Акт 3:</strong> <!-- Описание --></li>
+                    </ul>
+                </div>
+
+                <div class="production-card highlight">
+                    <div class="production-icon"><!-- Эмодзи --></div>
+                    <h3>Преимущества формата</h3>
+                    <ul class="advantages-list">
+                        <li><!-- Преимущество 1 --></li>
+                        <li><!-- Преимущество 2 --></li>
+                        <li><!-- Преимущество 3 --></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="audience-block">
+                <h3>Для кого эта история</h3>
+                <p class="audience-description"><!-- Эмоциональное описание аудитории --></p>
+                <h4 class="audience-subtitle">Аудитория</h4>
+                <p class="audience-demographics"><!-- Демография --></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         КОНТАКТЫ
+         ======================================== -->
+    <section id="contacts" class="section contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3><!-- Имя --></h3>
+                        <p class="contact-role"><!-- Роль --></p>
+                        <a href="mailto:email@example.com"><!-- Email --></a>
+                        <a href="tel:+7XXXXXXXXXX"><!-- Телефон --></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ФУТЕР
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <!-- Год --> «<!-- Название -->» — <!-- Жанр / X серий --></p>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         МОДАЛЬНЫЕ ОКНА
+         ======================================== -->
+
+    <!-- Модальное окно для изображений -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <!-- Модальное окно слайдера локаций -->
+    <div id="locationModal" class="storyboard-modal">
+        <div class="storyboard-modal-content">
+            <span class="storyboard-close" onclick="closeLocationSlider()">&times;</span>
+            <h3 id="locationTitle" class="location-modal-title">Локация</h3>
+            <div class="storyboard-slider">
+                <button class="slider-arrow slider-prev" onclick="changeLocationSlide(-1)">&#10094;</button>
+                <div class="slider-container">
+                    <img id="locationImage" src="" alt="Локация">
+                </div>
+                <button class="slider-arrow slider-next" onclick="changeLocationSlide(1)">&#10095;</button>
+            </div>
+            <div class="slider-counter">
+                <span id="currentLocationSlide">1</span> / <span id="totalLocationSlides">1</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="script.js?v=1"></script>
+</body>
+</html>
