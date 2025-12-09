@@ -522,6 +522,150 @@ if ('IntersectionObserver' in window) {
 
 ---
 
+## Адаптивность (ВАЖНО!)
+
+### Breakpoints
+
+| Устройство | Ширина | Описание |
+|------------|--------|----------|
+| Десктоп | >1024px | Базовые стили, параллакс-фоны |
+| Планшет (ландшафт) | ≤1024px | Фоны scroll, сетки 2 колонки |
+| Планшет (портрет) | ≤768px | Гамбургер-меню, сетки 1 колонка |
+| Телефон | ≤480px | Компактные элементы, меньше шрифты |
+| Маленький телефон | ≤360px | Минимальные размеры |
+
+### Обязательные медиа-запросы
+
+```css
+/* Планшет */
+@media (max-width: 1024px) {
+    /* Отключить fixed фоны (не работают на iOS!) */
+    .hero, .story, .visual, .characters, .rhythm, .vision, .production, .contacts {
+        background-attachment: scroll !important;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+/* Планшет портрет / большие телефоны */
+@media (max-width: 768px) {
+    /* Мобильное меню */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: rgba(10, 10, 10, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active { left: 0; }
+    .hamburger { display: flex; }
+
+    /* Все сетки в 1 колонку */
+    .characters-grid,
+    .locations-grid,
+    .emotion-grid,
+    .production-grid,
+    .visual-accents,
+    .camera-grid,
+    .color-scheme {
+        grid-template-columns: 1fr;
+    }
+
+    /* Постеры 2x2 */
+    .posters-grid.posters-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Постеры в 1 колонку */
+    .posters-grid.posters-2,
+    .posters-grid.posters-1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Адаптивные размеры постеров */
+    .poster-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 7/10;
+    }
+
+    /* Уменьшить заголовки */
+    .hero-title {
+        font-size: 60px;
+        letter-spacing: 10px;
+    }
+
+    .section-title { font-size: 36px; }
+    .subsection-title { font-size: 24px; }
+}
+
+/* Телефоны */
+@media (max-width: 480px) {
+    /* Заголовок Hero - НЕ ДОЛЖЕН ОБРЕЗАТЬСЯ! */
+    .hero-title {
+        font-size: 32px;
+        letter-spacing: 2px;
+        padding: 0 10px;
+        word-wrap: break-word;
+    }
+
+    /* Постеры в 1 колонку */
+    .posters-grid.posters-4 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Уменьшить отступы */
+    .section { padding: 60px 0; }
+    .container { padding: 0 15px; }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 26px;
+        letter-spacing: 1px;
+    }
+}
+```
+
+### Критические правила адаптивности
+
+1. **background-attachment: fixed НЕ РАБОТАЕТ на iOS!**
+   - Обязательно отключать для всех устройств ≤1024px
+   - Использовать `background-attachment: scroll !important`
+
+2. **Заголовок Hero не должен обрезаться**
+   - Уменьшать font-size и letter-spacing для маленьких экранов
+   - Добавлять padding по краям
+   - Тестировать на реальном телефоне
+
+3. **Все сетки должны быть в 1 колонку на телефонах**
+   - `grid-template-columns: 1fr`
+
+4. **Гамбургер-меню обязательно**
+   - Скрывать nav-menu по умолчанию на ≤768px
+   - Показывать hamburger
+
+5. **Слайдеры должны работать**
+   - Уменьшать размер стрелок
+   - Уменьшать max-height изображений
+
+### Тестирование
+
+Проверять на:
+- iPhone SE (375px) — маленький телефон
+- iPhone 14 (390px) — средний телефон
+- iPad (768px) — планшет портрет
+- iPad ландшафт (1024px) — планшет ландшафт
+- MacBook (1440px) — ноутбук
+- iMac (1920px+) — десктоп
+
+---
+
 ## Хостинг на GitHub Pages
 
 ### Настройка:
