@@ -14,6 +14,7 @@
     --bg-medium: #1a1a1a;
     --bg-light: #2a2a2a;
     --accent-color: #c9a959;
+    --border-radius: 12px;
 }
 
 html {
@@ -217,6 +218,7 @@ body {
     padding: 30px;
     background: var(--bg-light);
     border-left: 3px solid var(--primary-color);
+    border-radius: var(--border-radius);
 }
 
 .info-item {
@@ -263,6 +265,7 @@ body {
     overflow: hidden;
     background: var(--bg-light);
     border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--border-radius);
 }
 
 .video-wrapper iframe {
@@ -290,6 +293,7 @@ body {
     text-align: center;
     border: 1px solid rgba(212, 175, 55, 0.1);
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .creative-item:hover {
@@ -351,6 +355,7 @@ body {
     border: 1px solid rgba(212, 175, 55, 0.1);
     overflow: hidden;
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .actor-item:hover {
@@ -408,6 +413,7 @@ body {
     cursor: pointer;
     border: 1px solid rgba(212, 175, 55, 0.1);
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .gallery-item:hover {
@@ -736,6 +742,7 @@ body {
     padding: 50px 30px;
     background: var(--bg-light);
     border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--border-radius);
 }
 
 .screenplay-intro:hover {
@@ -785,6 +792,7 @@ body {
     border: 1px solid rgba(212, 175, 55, 0.1);
     overflow: hidden;
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .character-card:hover {
@@ -953,6 +961,7 @@ body {
     border: 1px solid rgba(212, 175, 55, 0.2);
     overflow: hidden;
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .poster-image:hover {
@@ -999,6 +1008,8 @@ body {
     padding: 30px;
     text-align: center;
     border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .color-block-image {
@@ -1055,6 +1066,8 @@ body {
     padding: 25px;
     background: rgba(42, 42, 42, 0.5);
     border-left: 3px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .accent-item strong {
@@ -1119,6 +1132,7 @@ body {
     border: 1px solid rgba(212, 175, 55, 0.1);
     overflow: hidden;
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .location-card:hover {
@@ -1202,6 +1216,9 @@ body {
     max-width: 800px;
     margin: 0 auto 50px;
     text-align: center;
+    background: rgba(42, 42, 42, 0.5);
+    padding: 30px;
+    border-radius: var(--border-radius);
 }
 
 .rhythm-concept p {
@@ -1221,6 +1238,7 @@ body {
     padding: 35px;
     border: 1px solid rgba(212, 175, 55, 0.1);
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .emotion-card:hover {
@@ -1394,6 +1412,7 @@ body {
     background: linear-gradient(rgba(10, 10, 10, 0.6), rgba(10, 10, 10, 0.6)), url('images/P36B0KH3.jpg');
     background-size: cover;
     background-position: center;
+    border-radius: var(--border-radius);
 }
 
 .vision-points {
@@ -1406,6 +1425,7 @@ body {
     padding: 30px;
     background: var(--bg-light);
     border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: var(--border-radius);
 }
 
 .vision-point h4 {
@@ -1452,6 +1472,7 @@ body {
     padding: 30px;
     margin-bottom: 30px;
     border-left: 3px solid var(--primary-color);
+    border-radius: var(--border-radius);
 }
 
 .actors-principle-bg {
@@ -1483,6 +1504,7 @@ body {
     transition: all 0.3s;
     display: flex;
     flex-direction: column;
+    border-radius: var(--border-radius);
 }
 
 .actor-approach-card:hover {
@@ -1638,6 +1660,7 @@ body {
     margin-bottom: 30px;
     border-left: 3px solid var(--primary-color);
     font-style: italic;
+    border-radius: var(--border-radius);
 }
 
 .camera-philosophy p {
@@ -1656,6 +1679,7 @@ body {
     background: var(--bg-light);
     padding: 25px;
     border: 1px solid rgba(212, 175, 55, 0.1);
+    border-radius: var(--border-radius);
 }
 
 .camera-card h4 {
@@ -1701,6 +1725,7 @@ body {
     background-size: cover;
     background-position: center;
     border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--border-radius);
 }
 
 .storyboard-intro p {
@@ -1851,6 +1876,7 @@ body {
     text-align: center;
     border: 1px solid rgba(212, 175, 55, 0.1);
     transition: all 0.3s;
+    border-radius: var(--border-radius);
 }
 
 .production-card:hover {
@@ -1936,6 +1962,7 @@ body {
     background: rgba(42, 42, 42, 0.5);
     padding: 40px;
     border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: var(--border-radius);
 }
 
 .audience-block h3 {
@@ -1956,6 +1983,7 @@ body {
     padding: 20px;
     background: rgba(26, 26, 26, 0.5);
     border-left: 3px solid var(--primary-color);
+    border-radius: var(--border-radius);
 }
 
 .segment strong {
